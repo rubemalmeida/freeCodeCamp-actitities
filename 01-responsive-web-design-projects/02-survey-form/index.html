@@ -1,0 +1,110 @@
+<h1 id="title">Survey Form</h1>
+
+<form id="survey-form">
+
+    <div class="divLineExtraSpace">
+        <p id="description">Let me know more about you.</p>
+    </div>
+
+    <div class="divLine">
+        <div class="divLabel">
+            <label id="name-label" for="name">Name</label>
+        </div>
+        <div class="divData">
+            <input id="name" name="name" type="text" placeholder="Inform a name" required>
+        </div>
+    </div>
+
+    <div class="divLine">
+        <div class="divLabel">
+            <label id="email-label" for="email">Email</label>
+        </div>
+        <div class="divData">
+            <input id="email" name="email" type="email" placeholder="email@domain.com" required>
+        </div>
+    </div>
+
+    <div class="divLine">
+        <div class="divLabel">
+            <label id="number-label" for="number">Age</label>
+        </div>
+        <div class="divData">
+            <input id="number" name="number" type="number" min="18" max="100" placeholder="00">
+        </div>
+    </div>
+
+    <div class="divLine">
+        <div class="divLabel">You are..</div>
+        <div class="divData">
+            <select id="dropdown">
+                <option disabled value>Select an option</option>
+                <option>Student</option>
+                <option>Trainee</option>
+                <option>Full time job</option>
+                <option>Other</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="divLine">
+        <div class="divLabel">What do you prefer?</div>
+        <div class="divData">
+            <ul>
+                <li>
+                    <label>
+                        <input name="pref" type="radio" value="frontend" required checked>Frontend</label>
+                </li>
+                <li>
+                    <label>
+                        <input name="pref" type="radio" value="backend">Backend</label>
+                </li>
+                <li>
+                    <label>
+                        <input name="pref" type="radio" value="mobile">Mobile</label>
+                </li>
+                <li>
+                    <label>
+                        <input name="pref" type="radio" value="devops">Devops</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="divLine">
+        <div class="divLabel">What you know?</div>
+        <div class="divData">
+            <ul>
+                <li>
+                    <label>
+                        <input name="language" type="checkbox" value="1">C</label>
+                </li>
+                <li>
+                    <label>
+                        <input name="language" type="checkbox" value="2">Java</label>
+                </li>
+                <li>
+                    <label>
+                        <input name="language" type="checkbox" value="3">PHP</label>
+                </li>
+                <li>
+                    <label>
+                        <input name="language" type="checkbox" value="3">Other</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="divLine">
+        <div class="divLabel">
+            <label id="comment-label" for="comment">Additional comments</label>
+        </div>
+        <div class="divData">
+            <textarea id="comment" rows="4" cols="40"></textarea>
+        </div>
+    </div>
+
+    <div class="centerText">
+        <button id="submit" type="submit">Submit</button>
+    </div>
+
+</form>
