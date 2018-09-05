@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>freeCodeCamp: Technical Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <header>js documentation</header>
+        <ul>
+            <a class="nav-link" href="#Value_properties" rel="internal"><li>Value properties</li></a>
+            <a class="nav-link" href="#Function_properties"><li>Function properties</li></a>
+            <a class="nav-link" href="#Fundamental_objects"><li>Fundamental objects</li></a>
+            <a class="nav-link" href="#Numbers_and_dates"><li>Numbers and dates</li></a>
+            <a class="nav-link" href="#Text_processing"><li>Text processing</li></a>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <p>This is some part of documentation of Global Variables.</p>
+        <hr>
+        <section id="Value_properties" class="main-section">
+            <header>Value properties</header>
+            <article>
+                <p>These global properties return a simple value; they have no properties or methods.</p>
+                <ul>
+                    <li>Infinity</li>
+                    <li>NaN</li>
+                    <li>undefined</li>
+                    <li>null literal</li>
+                </ul>
+                <p>The global Infinity property is a numeric value representing infinity. Eg.</p>
+                <code class="code">
+                  var maxNumber = Math.pow(10, 1000); // max positive number<br>
+                  <br>
+                  if (maxNumber === Infinity) {<br>
+                    console.log("Let's call it Infinity!");<br>
+                    // expected output: "Let's call it Infinity!"<br>
+                    }<br>
+                    <br>
+                    console.log(1 / maxNumber);<br>
+                    // expected output: 0
+                </code>
+            </article>
+        </section>
+        <section id="Function_properties" class="main-section">
+            <header>Function properties</header>
+            <article>
+                <p>These global functions—functions which are called globally rather than on an object—directly return their
+                    results to the caller.</p>
+                <ul>
+                    <li>eval()</li>
+                    <li>uneval() - not standardized</li>
+                    <li>isFinite()</li>
+                    <li>isNaN()</li>
+                    <li>parseFloat()</li>
+                    <li>parseInt()</li>
+                    <li>decodeURI()</li>
+                    <li>decodeURIComponent()</li>
+                    <li>encodeURI()</li>
+                    <li>encodeURIComponent()</li>
+                    <li>escape() - deprecated</li>
+                    <li>unescape() - deprecated</li>
+                </ul>
+                <p>The eval() function evaluates JavaScript code represented as a string. Eg.</p>
+                <code>
+                    console.log(eval('2 + 2'));<br>
+                    // expected output: 4<br>
+                    <br>
+                    console.log(eval(new String('2 + 2')));<br>
+                    // expected output: 2 + 2<br>
+                    <br>
+                    console.log(eval('2 + 2') === eval('4'));<br>
+                    // expected output: true<br>
+                    <br>
+                    console.log(eval('2 + 2') === eval(new String('2 + 2')));<br>
+                    // expected output: false<br>
+                </code>
+            </article>
+        </section>
+        <section id="Fundamental_objects" class="main-section">
+            <header>Fundamental objects</header>
+            <article>
+                <p>These are the fundamental, basic objects upon which all other objects are based. This includes objects
+                    that represent general objects, functions, and errors.</p>
+                <ul>
+                    <li>Object</li>
+                    <li>Function</li>
+                    <li>Boolean</li>
+                    <li>Symbol</li>
+                    <li>Error</li>
+                    <li>EvalError</li>
+                    <li>InternalError</li>
+                    <li>RangeError</li>
+                    <li>ReferenceError</li>
+                    <li>SyntaxError</li>
+                    <li>TypeError</li>
+                    <li>URIError</li>
+                </ul>
+                <p>The Object constructor creates an object wrapper. Eg.</p>
+                <code>
+                    // Object initialiser or literal<br>
+                    { [ nameValuePair1[, nameValuePair2[, ...nameValuePairN] ] ] }<br>
+                    <br>
+                    // Called as a constructor<br>
+                    new Object([value])<br>
+                </code>
+            </article>
+        </section>
+        <section id="Numbers_and_dates" class="main-section">
+            <header>Numbers and dates</header>
+            <article>
+                <p>These are the base objects representing numbers, dates, and mathematical calculations.</p>
+                <ul>
+                    <li>Number</li>
+                    <li>Math</li>
+                    <li>Date</li>
+                </ul>
+                <p>The <strong>Number</strong> JavaScript object is a wrapper object allowing you to work with numerical values. A Number object is created using the Number() constructor. Eg.</p>
+                <code>
+                    new Number(value);
+                </code>
+            </article>
+        </section>
+        <section id="Text_processing" class="main-section">
+            <header>Text processing</header>
+            <article>
+                <p>These objects represent strings and support manipulating them.</p>
+                <ul>
+                    <li>String</li>
+                    <li>RegEx</li>
+                </ul>
+                <p>The <strong>String</strong> global object is a constructor for strings or a sequence of characters. Eg.</p>
+                <p>String literals take the forms:</p>
+                <code>
+                    'string text'
+                    "string text"
+                    "中文 español deutsch English देवनागरी العربية português বাংলা русский 日本語 ਪੰਜਾਬੀ 한국어 தமிழ் עברית"
+                </code>
+                <p>Strings can also be created using the String global object directly:</p>
+                <code>
+                    String(thing)
+                </code>
+            </article>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
