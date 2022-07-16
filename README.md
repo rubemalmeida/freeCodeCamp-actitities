@@ -1,5 +1,5 @@
-# free-code-camp-projects
-The place to post my [freeCodeCamp(🔥) projects](https://learn.freecodecamp.org/)
+# free-code-camp-actitities
+The place to post my [freeCodeCamp(🔥) projects e actitities](https://learn.freecodecamp.org/)
 
 ---
 
